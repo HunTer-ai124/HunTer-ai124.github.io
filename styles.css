@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #1F3864;
+}
+
+.navbar {
+    background-color: #1F3864;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.headshot {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #1F3864;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #1F3864;
+    color: #ffffff;
+    margin-top: 15px;
+}
+.project-card {
+    margin-bottom: 20px;
+    border: 2px solid #1F3864;
+}
+
+.table th {
+    background-color: #1F3864;
+    color: #ffffff;
+}
+.page {
+    padding: 40px 20px;
+}
+
+.skill-group {
+    margin-top: 20px;
+}
+
+.skill-group h3 {
+    border-bottom: 2px solid #1F3864;
+    padding-bottom: 5px;
+}
+.contact-form {
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.send-btn {
+    background-color: #1F3864;
+    color: #ffffff;
+}
+
+#thanks {
+    margin-top: 15px;
+    font-weight: bold;
+}

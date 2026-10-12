@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Adedeji Oluwasegun John | Contact</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('#contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    document.querySelector('#thanks').innerHTML = 'Thanks, I’ll reply within 24 hours.';
+                    this.reset();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Adedeji John</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container page">
+            <h1>Contact</h1>
+            <p>Email: <a href="mailto:seguna670@gmail.com">seguna670@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/adedejioluwasegun/">LinkedIn profile</a></p>
+            <p>GitHub: <a href="https://github.com/HunTer-ai124">GitHub profile</a></p>
+
+            <form id="contact-form" class="contact-form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" class="form-control" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn send-btn">Send</button>
+            </form>
+            <p id="thanks"></p>
+        </main>
+    </body>
+</html>
+
