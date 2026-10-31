@@ -6,6 +6,10 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         <link href="styles.css" rel="stylesheet">
+        <style>
+            /* make every project picture the same height so the cards line up */
+            .project-card img { height: 220px; object-fit: cover; object-position: top; }
+        </style>
         <title>Adedeji Oluwasegun John | Projects</title>
     </head>
     <body>
@@ -40,34 +44,62 @@
                 </thead>
                                                <tbody>
                     <tr>
-                        <td>HR Attrition Dashboard</td>
-                        <td>Power BI, Microsoft Fabric</td>
-                        <td>Tracked 22.19% attrition across 320 employees and flagged Marketing (40%) as the highest-risk department</td>
-                        <td>Coming soon</td>
-                    </tr>
-                    <tr>
-                        <td>Sales Dashboard</td>
-                        <td>Power BI</td>
-                        <td>Built an interactive dashboard to track sales performance and trends</td>
-                        <td>Coming soon</td>
-                    </tr>
-                    <tr>
-                        <td>Snowflake Analysis</td>
-                        <td>Snowflake, SQL</td>
-                        <td>Queried and visualized business data in Snowflake using SQL</td>
-                        <td>Coming soon</td>
+                        <td><strong>i-Fitness Client Retention Analysis</strong></td>
+                        <td>Excel, Power BI, DAX, Microsoft Fabric, SQL</td>
+                        <td>Analysed 3 years of my own personal training data: 87.5% of clients stayed month to month, 63% came through my own referrals and engagement, and they brought in &#8358;17.6M in PT fees</td>
+                        <td><a href="https://github.com/HunTer-ai124/ifitness-client-retention-analysis">View on GitHub</a></td>
                     </tr>
                     <tr>
                         <td>Daily Job Finder</td>
                         <td>n8n, APIs, AI</td>
-                        <td>Automated a daily search for remote analyst job postings</td>
+                        <td>Pulls 300+ jobs from 5 job boards every 6 hours, scores each one with AI and emails a ranked shortlist</td>
                         <td><a href="https://github.com/HunTer-ai124/ai-daily-job-finder">View on GitHub</a></td>
+                    </tr>
+                    <tr>
+                        <td>AI CV Screener</td>
+                        <td>n8n, AI</td>
+                        <td>A recruiter uploads a batch of CVs, and the workflow reads each one, scores it against the job description and ranks the candidates</td>
+                        <td>Demo on request</td>
+                    </tr>
+                    <tr>
+                        <td>Upwork Niche Tracker</td>
+                        <td>n8n, AI</td>
+                        <td>Paste an Upwork job search into a form, AI pulls out each job, and a summary arrives every Monday showing which jobs are worth applying to</td>
+                        <td>Demo on request</td>
+                    </tr>
+                    <tr>
+                        <td>HR Attrition Dashboard</td>
+                        <td>Power BI, Microsoft Fabric</td>
+                        <td>Tracked 22.19% attrition across 320 employees and flagged Marketing (40%) as the department most at risk</td>
+                        <td>Screenshot below</td>
+                    </tr>
+                    <tr>
+                        <td>Nigerian Port Demurrage Analysis</td>
+                        <td>Snowflake, SQL</td>
+                        <td>Cleaned 3,025 shipment records and found that 46% of $4.19M in demurrage came from paperwork problems on the importer's side</td>
+                        <td>Screenshot below</td>
+                    </tr>
+                    <tr>
+                        <td>Sales Performance Dashboard</td>
+                        <td>Power BI</td>
+                        <td>Interactive dashboard tracking sales performance and trends from 2011 to 2014</td>
+                        <td>Screenshot below</td>
                     </tr>
                 </tbody>
             </table>
 
             <div class="row">
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://github.com/HunTer-ai124/ifitness-client-retention-analysis" class="text-decoration-none">
+                        <div class="card project-card">
+                            <img src="ifitness.jpg" class="card-img-top" alt="i-Fitness Client Retention dashboard">
+                            <div class="card-body">
+                                <h5 class="card-title">i-Fitness Client Retention</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
                     <div class="card project-card">
                         <img src="hr.jpg" class="card-img-top" alt="HR Attrition Dashboard">
                         <div class="card-body">
@@ -75,7 +107,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-4">
                     <div class="card project-card">
                         <img src="sales.jpg" class="card-img-top" alt="Sales Dashboard">
                         <div class="card-body">
@@ -83,15 +115,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-4">
                     <div class="card project-card">
-                        <img src="snowflake.jpg" class="card-img-top" alt="Snowflake chart">
+                        <img src="snowflake.jpg" class="card-img-top" alt="Port demurrage analysis chart">
                         <div class="card-body">
-                            <h5 class="card-title">Snowflake Analysis</h5>
+                            <h5 class="card-title">Port Demurrage Analysis</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-4">
                     <div class="card project-card">
                         <img src="jobfinder.jpg" class="card-img-top" alt="Daily Job Finder">
                         <div class="card-body">
